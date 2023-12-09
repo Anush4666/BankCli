@@ -12,7 +12,7 @@ func AddClient() {
 		name    string
 		balance int
 	)
-	fmt.Println("Введите ваше имя:")
+	fmt.Println("Введите имя:")
 	fmt.Scan(&name)
 	fmt.Println("Введите сумму:")
 	fmt.Scan(&balance)
