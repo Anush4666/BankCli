@@ -12,8 +12,9 @@ func AddClient() {
 		name    string
 		balance int
 	)
-
+	fmt.Println("Введите ваше имя:")
 	fmt.Scan(&name)
+	fmt.Println("Введите сумму:")
 	fmt.Scan(&balance)
 	database[name] = balance
 	fmt.Println("________________")
@@ -38,7 +39,7 @@ func AddMoney(name string) {
 
 	fmt.Println("________________")
 	fmt.Println("Готово")
-	fmt.Println("Итоговая сумма", name, balance+refill)
+	fmt.Println("Итоговая сумма:", name, balance+refill)
 	fmt.Println("________________")
 }
 
@@ -105,7 +106,7 @@ func main() {
 		} else if choice == 5 {
 			break
 		}
-		time.Sleep(2 * time.Second)
+		time.Sleep(1 * time.Second)
 	}
 
 }
