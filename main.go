@@ -94,13 +94,13 @@ func main() {
 		if choice == 1 {
 			AddClient()
 		} else if choice == 2 {
-			fmt.Println("Имя клиента и сумму пополнения:")
+			fmt.Println(" Введите имя клиента и сумму пополнения:")
 			fmt.Scan(&name)
 			AddMoney(name)
 		} else if choice == 3 {
 			GiveClientsBalance()
 		} else if choice == 4 {
-			fmt.Println("Имя клиента и сумму снятия:")
+			fmt.Println("Введите имя клиента и сумму снятия:")
 			fmt.Scan(&name)
 			WithdrawFromBalance(name)
 		} else if choice == 5 {
